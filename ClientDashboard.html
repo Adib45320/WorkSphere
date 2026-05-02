@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f6fb; }
+        header { background: #2b6cb0; color: white; padding: 1rem; text-align: center; }
+        main { padding: 2rem; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 1rem; padding: 1rem; }
+        .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+        .metric { font-size: 2rem; font-weight: bold; }
+        .label { color: #555; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Client Dashboard</h1>
+        <p>Quick overview of client metrics</p>
+    </header>
+    <main>
+        <section class="grid">
+            <div class="card">
+                <div class="metric">128</div>
+                <div class="label">Active Clients</div>
+            </div>
+            <div class="card">
+                <div class="metric">24</div>
+                <div class="label">New Leads</div>
+            </div>
+            <div class="card">
+                <div class="metric">92%</div>
+                <div class="label">Satisfaction Rate</div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>Client A signed a new contract.</li>
+                <li>Client B requested a service update.</li>
+                <li>Client C reviewed the latest report.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
